@@ -43,7 +43,7 @@ def main():
     # list load_path sub-folders
     #regex = re.compile(r'^[0-9]')
     #directory_list = [i for i in os.listdir(load_path) if regex.search(i)]
-    directory_list = [i for i in os.listdir(load_path)]
+    directory_list = [i for i in os.listdir(load_path) if os.path.isdir(os.path.join(load_path, i))]
     
     # initialize empty array for features
     X = np.empty([1, 18])

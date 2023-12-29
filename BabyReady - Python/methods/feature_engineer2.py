@@ -2,7 +2,7 @@
 
 # import pandas as pd
 import numpy as np
-from librosa.feature import zero_crossing_rate, mfcc, spectral_centroid, spectral_rolloff, spectral_bandwidth, rmse
+from librosa.feature import zero_crossing_rate, mfcc, spectral_centroid, spectral_rolloff, spectral_bandwidth, rms
 # chroma_cens, rmse
 
 __all__ = [
@@ -43,7 +43,7 @@ class FeatureEngineer:
 
         zcr_feat = zero_crossing_rate(y=audio_data, hop_length=self.FRAME)
 
-        rmse_feat = rmse(y=audio_data, hop_length=self.FRAME)
+        rmse_feat = rms(y=audio_data, hop_length=self.FRAME)
 
         if rmse_feat.shape == (1, 427):
             rmse_feat = np.concatenate((rmse_feat, np.zeros((1, 4))), axis=1)

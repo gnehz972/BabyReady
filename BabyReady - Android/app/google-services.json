@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "791910813462",
+    "project_id": "baby-ready-8d2fd",
+    "storage_bucket": "baby-ready-8d2fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791910813462:android:dc4537b0ce66239a144a37",
+        "android_client_info": {
+          "package_name": "com.example.kyle0.babyready"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTx7NhGwvsQdnSMEvLG1OS3DGupCEl_jA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

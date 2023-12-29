@@ -125,14 +125,16 @@ def record():
     return sample_width, r
 
 def record_to_file(path):
+    print("0000")
     global BABY_REC
     "Records from the microphone and outputs the resulting data to 'path'"
     count={'bp':0,'bu':0,'ch':0,'dc':0,'hu':0,'lo':0,'sc':0,'ti':0}
-    finalPrediction="";
+    finalPrediction=""
+    print("00001")
     while finalPrediction=="":
+        print("11111")
         sample_width, data = record()
-		
-        
+        print("22222")
         		
         data = pack('<' + ('h'*len(data)), *data)
         wf = wave.open(path, 'wb')
@@ -141,14 +143,22 @@ def record_to_file(path):
         wf.setframerate(RATE)
         wf.writeframes(data)
         wf.close()
+
+        print("3333")
 		
-        response = recognize_speech_from_file("recording.wav")
+        # response = recognize_speech_from_file("recording.wav")
+        response = {
+        "success": False,
+        "error": "Unable to recognize speech",
+        "transcription": None
+        }
 		
 		# If speech recognizer is unable to decipher audio file, it would either mean that 1) The baby is crying, or 2) The person speaking sucks at speaking.
 		# In our case we will assume the user has perfect recognizable speech
 		# If speech is recognized, then we will assume it is the user that is issuing commands to the application
-        
+        BABY_REC = True
         if(BABY_REC and response["error"]=="Unable to recognize speech"):
+            print("Guess: start")
             prediction = test_model.main()  #predict here
             print("Guess: "+prediction)
             count[prediction]=count[prediction]+1

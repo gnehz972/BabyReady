@@ -2,7 +2,6 @@ package com.example.kyle0.babyready;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-import android.graphics.PixelFormat;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaPlayer;
@@ -11,18 +10,17 @@ import android.widget.MediaController;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.speech.tts.TextToSpeech;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.SurfaceHolder;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -70,27 +68,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupTts();
-
         video = (VideoView) findViewById(R.id.video);
-
         FirebaseApp.initializeApp(this);
-
         database = FirebaseDatabase.getInstance();
-
-
-
         requestRecordAudioPermission();
         arm();
-
-
-
     }
 
-    public void audioPlayer(String fileName){
+    public void audioPlayer(String fileName) {
         //set up MediaPlayer
         MediaPlayer mp = new MediaPlayer();
 
-        File f = new File(getCacheDir()+"/" + fileName);
+        File f = new File(getCacheDir() + "/" + fileName);
         if (!f.exists()) try {
 
             InputStream is = getAssets().open(fileName);
@@ -103,11 +92,13 @@ public class MainActivity extends AppCompatActivity {
             FileOutputStream fos = new FileOutputStream(f);
             fos.write(buffer);
             fos.close();
-        } catch (Exception e) { throw new RuntimeException(e); }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         try {
 
-            if(fileName.equalsIgnoreCase("baby_shark.mp4")){
+            if (fileName.equalsIgnoreCase("baby_shark.mp4")) {
                 MediaController mediaController = new MediaController(this);
                 mediaController.setAnchorView(video);
                 video.setVisibility(View.VISIBLE);
@@ -123,8 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         video.setVisibility(View.INVISIBLE);
                     }
                 });
-            }
-            else {
+            } else {
                 mp.setDataSource(f.getPath());
                 mp.prepare();
                 mp.start();
@@ -135,7 +125,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-
 
 
         } catch (Exception e) {
@@ -174,8 +163,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     public void arm() {
         Runnable runnable = new Runnable() {
             @Override
@@ -191,6 +178,16 @@ public class MainActivity extends AppCompatActivity {
 
                 int bufferSize = bufferSizeInBytes;
                 byte[] audioBuffer = new byte[bufferSize];
+                if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
                 audioRecorder = new AudioRecord(
                         MediaRecorder.AudioSource.MIC,
                         RECORDER_SAMPLERATE,
@@ -467,7 +464,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(DatabaseError error) {
+            public void onCancelled(@NonNull DatabaseError error) {
                 // Failed to read value
                 Log.w("TAG", "Failed to read value.", error.toException());
             }
@@ -534,6 +531,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case 1: {
                 // If request is cancelled, the result arrays are empty.

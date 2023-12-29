@@ -1,10 +1,130 @@
-2018-07-22 05:03:51 PM - INFO - Reading recording.3gp
-2018-07-22 05:03:51 PM - INFO - Reading file: recording.3gp ...
-2018-07-22 05:03:52 PM - INFO - Time taken: 0.9056645027942334
-2018-07-22 05:03:52 PM - INFO - Time taken for reading file: 0.9060130010834235
-2018-07-22 05:03:52 PM - INFO - Starting feature engineering
-2018-07-22 05:03:53 PM - INFO - Time taken for feature engineering: 0.19227244088023265
-2018-07-22 05:03:53 PM - INFO - Predicting...
-2018-07-22 05:03:53 PM - INFO - Time taken for prediction: 0.002219501268158952. Is it a baby cry?? ti
-2018-07-22 05:03:53 PM - INFO - Saving prediction...
-2018-07-22 05:03:53 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:58:27 PM - INFO - Reading recording.wav
+2023-12-29 05:58:27 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:58:27 PM - INFO - Time taken: 0.26445454300846905
+2023-12-29 05:58:27 PM - INFO - Time taken for reading file: 0.2648354599950835
+2023-12-29 05:58:27 PM - INFO - Starting feature engineering
+2023-12-29 05:58:27 PM - INFO - Time taken for feature engineering: 0.05784602998755872
+2023-12-29 05:58:27 PM - INFO - Predicting...
+2023-12-29 05:58:27 PM - INFO - Time taken for prediction: 0.29528352798661217. Is it a baby cry?? lo
+2023-12-29 05:58:27 PM - INFO - Saving prediction...
+2023-12-29 05:58:27 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:58:31 PM - INFO - Reading recording.wav
+2023-12-29 05:58:31 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:58:31 PM - INFO - Time taken: 0.10772109200479463
+2023-12-29 05:58:31 PM - INFO - Time taken for reading file: 0.10801068303408101
+2023-12-29 05:58:31 PM - INFO - Starting feature engineering
+2023-12-29 05:58:31 PM - INFO - Time taken for feature engineering: 0.02931958803674206
+2023-12-29 05:58:31 PM - INFO - Predicting...
+2023-12-29 05:58:31 PM - INFO - Time taken for prediction: 0.0008688700036145747. Is it a baby cry?? lo
+2023-12-29 05:58:31 PM - INFO - Saving prediction...
+2023-12-29 05:58:31 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:58:58 PM - INFO - Reading recording.wav
+2023-12-29 05:58:58 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:58:59 PM - INFO - Time taken: 0.25745946599636227
+2023-12-29 05:58:59 PM - INFO - Time taken for reading file: 0.2578634209930897
+2023-12-29 05:58:59 PM - INFO - Starting feature engineering
+2023-12-29 05:58:59 PM - INFO - Time taken for feature engineering: 0.06414393096929416
+2023-12-29 05:58:59 PM - INFO - Predicting...
+2023-12-29 05:58:59 PM - INFO - Time taken for prediction: 0.0021197920432314277. Is it a baby cry?? hu
+2023-12-29 05:58:59 PM - INFO - Saving prediction...
+2023-12-29 05:58:59 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:59:12 PM - INFO - Reading recording.wav
+2023-12-29 05:59:12 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:59:12 PM - INFO - Time taken: 0.10237057699123397
+2023-12-29 05:59:12 PM - INFO - Time taken for reading file: 0.1026501749875024
+2023-12-29 05:59:12 PM - INFO - Starting feature engineering
+2023-12-29 05:59:12 PM - INFO - Time taken for feature engineering: 0.06433526397449896
+2023-12-29 05:59:12 PM - INFO - Predicting...
+2023-12-29 05:59:12 PM - INFO - Time taken for prediction: 0.001111804973334074. Is it a baby cry?? ti
+2023-12-29 05:59:12 PM - INFO - Saving prediction...
+2023-12-29 05:59:12 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:59:23 PM - INFO - Reading recording.wav
+2023-12-29 05:59:23 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:59:23 PM - INFO - Time taken: 0.10758295300183818
+2023-12-29 05:59:23 PM - INFO - Time taken for reading file: 0.10784296598285437
+2023-12-29 05:59:23 PM - INFO - Starting feature engineering
+2023-12-29 05:59:23 PM - INFO - Time taken for feature engineering: 0.06530986196594313
+2023-12-29 05:59:23 PM - INFO - Predicting...
+2023-12-29 05:59:23 PM - INFO - Time taken for prediction: 0.0009097210131585598. Is it a baby cry?? ti
+2023-12-29 05:59:23 PM - INFO - Saving prediction...
+2023-12-29 05:59:23 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:59:35 PM - INFO - Reading recording.wav
+2023-12-29 05:59:35 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:59:35 PM - INFO - Time taken: 0.1055720949661918
+2023-12-29 05:59:35 PM - INFO - Time taken for reading file: 0.10586757701821625
+2023-12-29 05:59:35 PM - INFO - Starting feature engineering
+2023-12-29 05:59:35 PM - INFO - Time taken for feature engineering: 0.06367646798025817
+2023-12-29 05:59:35 PM - INFO - Predicting...
+2023-12-29 05:59:35 PM - INFO - Time taken for prediction: 0.0009522490436211228. Is it a baby cry?? hu
+2023-12-29 05:59:35 PM - INFO - Saving prediction...
+2023-12-29 05:59:35 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 05:59:48 PM - INFO - Reading recording.wav
+2023-12-29 05:59:48 PM - INFO - Reading file: recording.wav ...
+2023-12-29 05:59:48 PM - INFO - Time taken: 0.2580273749772459
+2023-12-29 05:59:48 PM - INFO - Time taken for reading file: 0.25845783902332187
+2023-12-29 05:59:48 PM - INFO - Starting feature engineering
+2023-12-29 05:59:48 PM - INFO - Time taken for feature engineering: 0.07263917295495048
+2023-12-29 05:59:48 PM - INFO - Predicting...
+2023-12-29 05:59:48 PM - INFO - Time taken for prediction: 0.002058235986623913. Is it a baby cry?? hu
+2023-12-29 05:59:48 PM - INFO - Saving prediction...
+2023-12-29 05:59:48 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:01 PM - INFO - Reading recording.wav
+2023-12-29 06:00:01 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:01 PM - INFO - Time taken: 0.15945437998743728
+2023-12-29 06:00:01 PM - INFO - Time taken for reading file: 0.1600489990087226
+2023-12-29 06:00:01 PM - INFO - Starting feature engineering
+2023-12-29 06:00:01 PM - INFO - Time taken for feature engineering: 0.0924654989503324
+2023-12-29 06:00:01 PM - INFO - Predicting...
+2023-12-29 06:00:01 PM - INFO - Time taken for prediction: 0.0014574400265701115. Is it a baby cry?? ti
+2023-12-29 06:00:01 PM - INFO - Saving prediction...
+2023-12-29 06:00:01 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:05 PM - INFO - Reading recording.wav
+2023-12-29 06:00:05 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:05 PM - INFO - Time taken: 0.13299571099923924
+2023-12-29 06:00:05 PM - INFO - Time taken for reading file: 0.13338305003708228
+2023-12-29 06:00:05 PM - INFO - Starting feature engineering
+2023-12-29 06:00:05 PM - INFO - Time taken for feature engineering: 0.026654232991859317
+2023-12-29 06:00:05 PM - INFO - Predicting...
+2023-12-29 06:00:05 PM - INFO - Time taken for prediction: 0.0011500510154291987. Is it a baby cry?? lo
+2023-12-29 06:00:05 PM - INFO - Saving prediction...
+2023-12-29 06:00:05 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:15 PM - INFO - Reading recording.wav
+2023-12-29 06:00:15 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:15 PM - INFO - Time taken: 0.17475442198337987
+2023-12-29 06:00:15 PM - INFO - Time taken for reading file: 0.1751663550385274
+2023-12-29 06:00:15 PM - INFO - Starting feature engineering
+2023-12-29 06:00:15 PM - INFO - Time taken for feature engineering: 0.107641501002945
+2023-12-29 06:00:15 PM - INFO - Predicting...
+2023-12-29 06:00:15 PM - INFO - Time taken for prediction: 0.0010744150495156646. Is it a baby cry?? hu
+2023-12-29 06:00:15 PM - INFO - Saving prediction...
+2023-12-29 06:00:15 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:21 PM - INFO - Reading recording.wav
+2023-12-29 06:00:21 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:21 PM - INFO - Time taken: 0.12344283703714609
+2023-12-29 06:00:21 PM - INFO - Time taken for reading file: 0.12383663502987474
+2023-12-29 06:00:21 PM - INFO - Starting feature engineering
+2023-12-29 06:00:21 PM - INFO - Time taken for feature engineering: 0.04207849700469524
+2023-12-29 06:00:21 PM - INFO - Predicting...
+2023-12-29 06:00:21 PM - INFO - Time taken for prediction: 0.0009112779516726732. Is it a baby cry?? lo
+2023-12-29 06:00:21 PM - INFO - Saving prediction...
+2023-12-29 06:00:21 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:35 PM - INFO - Reading recording.wav
+2023-12-29 06:00:35 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:35 PM - INFO - Time taken: 0.1152452360256575
+2023-12-29 06:00:35 PM - INFO - Time taken for reading file: 0.1156217769603245
+2023-12-29 06:00:35 PM - INFO - Starting feature engineering
+2023-12-29 06:00:35 PM - INFO - Time taken for feature engineering: 0.055618743994273245
+2023-12-29 06:00:35 PM - INFO - Predicting...
+2023-12-29 06:00:35 PM - INFO - Time taken for prediction: 0.0010472949943505228. Is it a baby cry?? lo
+2023-12-29 06:00:35 PM - INFO - Saving prediction...
+2023-12-29 06:00:35 PM - INFO - Saved! output/prediction/prediction.txt
+2023-12-29 06:00:52 PM - INFO - Reading recording.wav
+2023-12-29 06:00:52 PM - INFO - Reading file: recording.wav ...
+2023-12-29 06:00:52 PM - INFO - Time taken: 0.2685369579703547
+2023-12-29 06:00:52 PM - INFO - Time taken for reading file: 0.2689171580132097
+2023-12-29 06:00:52 PM - INFO - Starting feature engineering
+2023-12-29 06:00:52 PM - INFO - Time taken for feature engineering: 0.07648545096162707
+2023-12-29 06:00:52 PM - INFO - Predicting...
+2023-12-29 06:00:52 PM - INFO - Time taken for prediction: 0.002028863993473351. Is it a baby cry?? hu
+2023-12-29 06:00:52 PM - INFO - Saving prediction...
+2023-12-29 06:00:52 PM - INFO - Saved! output/prediction/prediction.txt

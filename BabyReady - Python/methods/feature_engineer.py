@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 import logging
 import timeit
-from librosa.feature import zero_crossing_rate, mfcc, spectral_centroid, spectral_rolloff, spectral_bandwidth,\
-    chroma_cens, rmse
+from librosa.feature import zero_crossing_rate, mfcc, spectral_centroid, spectral_rolloff, spectral_bandwidth, \
+    chroma_cens, rms
 
 __all__ = [
     'FeatureEngineer'
@@ -48,7 +48,7 @@ class FeatureEngineer:
         logging.info('Computing rmse...')
         start = timeit.default_timer()
 
-        rmse_feat = rmse(y=audio_data, hop_length=self.FRAME)
+        rmse_feat = rms(y=audio_data, hop_length=self.FRAME)
 
         stop = timeit.default_timer()
         logging.info('Time taken: {0}'.format(stop - start))
