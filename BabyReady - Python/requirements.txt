@@ -55,3 +55,5 @@ tzlocal==2.1
 urllib3==1.26.2
 PyAudio==0.2.13
 pyttsx3==2.90
+
+fastapi~=0.108.0

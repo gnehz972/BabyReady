@@ -25,7 +25,7 @@ def main():
                         default='logs/')
 
     # Arguments
-    args = parser.parse_args()
+    args, _ = parser.parse_known_args()
     load_path_data = args.load_path_data
     load_path_model = args.load_path_model
     file_name = args.file_name
