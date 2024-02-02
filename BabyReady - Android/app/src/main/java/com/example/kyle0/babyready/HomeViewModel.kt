@@ -19,7 +19,7 @@ sealed interface PingStatus {
 class HomeViewModel(
     private val repository: PredictionRepository = PredictionRepository(),
     private val recorder: Recorder = Recorder(),
-    private val audioPath: String =  BabyApp.context.cacheDir.absolutePath+ "baby-cry.3gp"
+    private val audioPath: String = BabyApp.context.cacheDir.absolutePath + "baby-cry.3gp"
 ) : ViewModel() {
 
     var pingStatus by mutableStateOf<PingStatus>(PingStatus.IDLE)

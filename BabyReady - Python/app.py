@@ -9,12 +9,12 @@ import shutil
 app = FastAPI()
 
 
-@app.get("/ping/")
+@app.get("/api/ping")
 async def ping():
     return {"status": "OK"}
 
 
-@app.post("/predict/")
+@app.post("/api/predict")
 async def predict(file: UploadFile):
     with open("recording.wav", "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)

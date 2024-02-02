@@ -12,7 +12,7 @@ import retrofit2.http.Part
 
 
 data class PingResponse(
-    val result: String
+    val status: String
 )
 
 data class PredictResponse(
