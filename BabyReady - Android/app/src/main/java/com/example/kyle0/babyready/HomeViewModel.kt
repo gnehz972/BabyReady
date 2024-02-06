@@ -39,7 +39,9 @@ class HomeViewModel(
 
     fun stopRecording() {
         recorder.stopRecording()
+    }
 
+    fun predict() {
         viewModelScope.launch {
             val file = File(audioPath)
             val result = repository.predict(file)
@@ -48,8 +50,6 @@ class HomeViewModel(
                 "fail prediction"
             }
         }
-
-
     }
 
 }
