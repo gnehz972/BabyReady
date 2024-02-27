@@ -27,16 +27,23 @@ class Recorder(
                 prepare()
                 start()
             } catch (e: IOException) {
-                Log.e("Recorder", "prepare() failed")
+                Log.w("Recorder", "start failed")
             }
-
         }
+    }
+
+    fun peekAmplitude(): Int {
+        return recorder?.maxAmplitude ?: 0
     }
 
     fun stopRecording() {
         recorder?.apply {
-            stop()
-            release()
+            try {
+                stop()
+                release()
+            } catch (e: Exception) {
+                Log.w("Recorder", "stop failed")
+            }
         }
         recorder = null
     }
